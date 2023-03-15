@@ -50,3 +50,21 @@ curl http://localhost:8088/ping
 и скриншот результата выполнения команды curl http://localhost:8088/ping.
 
 ![Задание 5-2](https://github.com/SSitkarev/10-5/blob/main/img/5-2.jpg)
+
+### Задание 6*
+
+Настройте Haproxy таким образом, чтобы при ответе на запрос:
+
+curl http://localhost:8080/
+
+он проксировал его в Nginx на порту 8088, который был настроен в задании 5 и возвращал от него ответ:
+
+"nginx is configured correctly".
+
+Приведите конфигурации настроенного Haproxy (порт 8080 занят другой софтиной, настроил на 8085.)
+
+![Задание 6-1](https://github.com/SSitkarev/10-5/blob/main/img/6-1.jpg)
+
+и скриншоты результата выполнения команды curl http://localhost:8080/.
+
+![Задание 6-2](https://github.com/SSitkarev/10-5/blob/main/img/6-2.jpg)
